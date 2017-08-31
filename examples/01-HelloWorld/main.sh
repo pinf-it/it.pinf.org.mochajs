@@ -6,8 +6,9 @@ depend {
 
 CALL_server run {
     "routes": {
-        "/code.js": {
+        "^/": {
             "@it.pinf.org.mochajs#s1": {
+                "exit": true,
                 "tests": {
                     "01-HelloWorld": function /* CodeBlock */ () {
 

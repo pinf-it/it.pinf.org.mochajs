@@ -26,7 +26,15 @@ exports.forConfig = function (CONFIG) {
                             console.log("NOTE: Leaving browser open due to '--dev'.");
                         } else {
                             // Test success
-                            API.SERVER.stop();
+                            if (CONFIG.exit === true) {
+                                API.SERVER.stop(function (err) {
+                                    if (err) {
+                                        console.error(err);
+                                        process.exit(1);
+                                    }
+                                    process.exit(0);
+                                });
+                            }
                         }
                     } else {
                         console.error("ERROR: Test failures!");
