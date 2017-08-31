@@ -1,0 +1,18 @@
+Adding route: /^\//
+Server: http://localhost:8080/
+[READY]
+127.0.0.1 - "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36"
+>>>TEST_IGNORE_LINE:"(start|end|duration)": (".*Z"|[\d]+),?s*$<<<
+<RESULT>
+{
+    "stats": {
+        "suites": 3,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+    }
+}
+</RESULT>
+127.0.0.1 - "POST /stop HTTP/1.1" 200 - "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36"
+OK
