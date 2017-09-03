@@ -1,11 +1,7 @@
+>>>TEST_IGNORE_LINE:^127\.<<<
 Adding route: /^\//
 Server: http://localhost:8080/
 [READY]
-127.0.0.1 - "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
-127.0.0.1 - "GET /.lib/mocha/mocha.css HTTP/1.1" 200 - "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
-127.0.0.1 - "GET /.lib/jquery/dist/jquery.js HTTP/1.1" 200 - "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
-127.0.0.1 - "GET /.lib/chai/chai.js HTTP/1.1" 200 - "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
-127.0.0.1 - "GET /.lib/mocha/mocha.js HTTP/1.1" 200 - "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
 >>>TEST_IGNORE_LINE:"(start|end|duration)": (".*Z"|[\d]+),?s*$<<<
 <RESULT>
 {
@@ -19,5 +15,4 @@ Server: http://localhost:8080/
     }
 }
 </RESULT>
-127.0.0.1 - "POST /stop HTTP/1.1" 200 - "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
 OK
