@@ -78,7 +78,7 @@ exports.forConfig = function (CONFIG) {
 
                 page = page.replace(/%%LIB_BASE_URL%%/g, "/.lib");
                 page = page.replace(/%%TESTS%%/g, tests.join("\n"));
-                page = page.replace(/%%STOP_URL%%/g, "http://127.0.0.1:" + CONFIG.variables.PORT + "/stop");
+                page = page.replace(/%%STOP_URL%%/g, "http://127.0.0.1:" + CONFIG.PORT || CONFIG.variables.PORT + "/stop");
                 page = page.replace(/%%SUITE%%/g, CONFIG.suite || "");
             }
 
