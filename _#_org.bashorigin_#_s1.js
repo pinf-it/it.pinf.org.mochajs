@@ -45,7 +45,7 @@ exports.forConfig = function (CONFIG) {
 
                 code = code.replace(/%%LIB_BASE_URL%%/g, "/.lib");
                 code = code.replace(/%%TESTS%%/g, tests.join("\n"));
-                code = code.replace(/%%STOP_URL%%/g, "http://127.0.0.1:" + CONFIG.PORT || CONFIG.variables.PORT + "/stop");
+                code = code.replace(/%%STOP_URL%%/g, "http://127.0.0.1:" + (CONFIG.PORT || CONFIG.variables.PORT) + "/stop");
                 code = code.replace(/%%SUITE%%/g, CONFIG.suite || "");
 
                 var path = PATH.join(__dirname, ".rt/it.pinf.org.mochajs", process.cwd().replace(/\//g, "~"), "index.js");
@@ -78,7 +78,7 @@ exports.forConfig = function (CONFIG) {
 
                 page = page.replace(/%%LIB_BASE_URL%%/g, "/.lib");
                 page = page.replace(/%%TESTS%%/g, tests.join("\n"));
-                page = page.replace(/%%STOP_URL%%/g, "http://127.0.0.1:" + CONFIG.PORT || CONFIG.variables.PORT + "/stop");
+                page = page.replace(/%%STOP_URL%%/g, "http://127.0.0.1:" + (CONFIG.PORT || CONFIG.variables.PORT) + "/stop");
                 page = page.replace(/%%SUITE%%/g, CONFIG.suite || "");
             }
 
