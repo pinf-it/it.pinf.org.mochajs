@@ -4,6 +4,8 @@ depend {
     "server": "@com.github/bash-origin/bash.origin.express#s1"
 }
 
+echo ">>>TEST_IGNORE_LINE:^127\.<<<"
+
 CALL_server run {
     "routes": {
         "^/": {
