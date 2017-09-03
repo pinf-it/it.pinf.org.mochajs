@@ -1,17 +1,19 @@
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Mocha Tests</title>
-  <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <title>Mocha Tests</title>
+    <link href="%%LIB_BASE_URL%%/mocha/mocha.css" rel="stylesheet" />
 </head>
 <body>
-  <div id="mocha"></div>
+    <div id="mocha"></div>
 
-  <script src="https://cdn.rawgit.com/jquery/jquery/2.1.4/dist/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.1.1/chai.min.js"></script>
-  <script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+    <script src="%%LIB_BASE_URL%%/jquery/dist/jquery.js"></script>
+    <script src="%%LIB_BASE_URL%%/chai/chai.js"></script>
+    <script src="%%LIB_BASE_URL%%/mocha/mocha.js"></script>
 
-  <script>mocha.setup('bdd')</script>
+    <script>
+        mocha.setup('bdd');
+    </script>
 
   <script>
 %%TESTS%%
@@ -29,10 +31,14 @@
                 type: "POST",
                 url: "%%STOP_URL%%",
                 data: JSON.stringify({
+                    "suite": "%%SUITE%%",
                     "stats": this.stats
                 }),
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
+                headers: {
+                    "Accept": "application/json; charset=utf-8",                     
+                    "Content-Type": "application/json; charset=utf-8"
+                },
+                dataType: "json"
             });
         });
   </script>
