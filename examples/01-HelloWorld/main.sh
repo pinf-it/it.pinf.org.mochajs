@@ -6,6 +6,8 @@ depend {
 
 echo ">>>TEST_IGNORE_LINE:^127\.<<<"
 
+BO_cecho "TODO: Request page in browser and close browser." RED
+
 CALL_server run {
     "routes": {
         "^/": {

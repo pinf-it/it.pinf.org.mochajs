@@ -1,9 +1,10 @@
 >>>TEST_IGNORE_LINE:^127\.<<<
-Adding route: /^\//
+[0;31mTODO: Request page in browser and close browser.[0m
+[bash.origin.express] Adding route: /^\//
 Server: http://localhost:8080/
 [READY]
 >>>TEST_IGNORE_LINE:"(start|end|duration)": (".*Z"|[\d]+),?s*$<<<
-<RESULT>
+<RESULT passed="true">
 {
     "suite": "",
     "stats": {
