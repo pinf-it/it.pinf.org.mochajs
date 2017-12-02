@@ -1,5 +1,8 @@
 
-const Promise = require("bluebird");
+const LIB = require("bash.origin.workspace").forPackage(__dirname).LIB;
+
+
+const Promise = LIB.BLUEBIRD;
 Promise.defer = function () {
     var deferred = {};
     deferred.promise = new Promise(function (resolve, reject) {
@@ -8,13 +11,13 @@ Promise.defer = function () {
     });
     return deferred;
 }
-const PATH = require("path");
-const FS = require("fs-extra");
-const MIME_TYPES = require("mime-types");
-const CODEBLOCK = require("codeblock");
-const LODASH = require("lodash");
-const BO = require("bash.origin");
-const CRYPTO = require("crypto");
+const PATH = LIB.PATH;
+const FS = LIB.FS_EXTRA;
+const MIME_TYPES = LIB.MIME_TYPES;
+const CODEBLOCK = LIB.CODEBLOCK;
+const LODASH = LIB.LODASH;
+const BO = LIB.BASH_ORIGIN;
+const CRYPTO = LIB.CRYPTO;
 
 
 var reports = {};
