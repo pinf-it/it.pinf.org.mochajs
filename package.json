@@ -1,16 +1,16 @@
 {
-  "name": "it.pinf.org.mochajs",
-  "version": "0.0.0",
-  "pm": {
-      "publish": "npm"
-  },
-  "dependencies": {
-    "bash.origin.workspace": "^0.2.61",
-    "chai": "https://github.com/chaijs/chai/tarball/4.1.2",
-    "jquery": "^3.2.1",
-    "mocha": "^3.5.0"
-  },
-  "scripts": {
-    "test": "BO_ROOT_SCRIPT_PATH=$(pwd)/node_modules/bash.origin/bash.origin bash.origin.test examples"
-  }
+    "name": "it.pinf.org.mochajs",
+    "version": "0.0.1",
+    "pm": {
+        "publish": "npm"
+    },
+    "dependencies": {
+        "bash.origin.workspace": "^0.2.61",
+        "chai": "https://github.com/chaijs/chai/tarball/4.1.2",
+        "jquery": "^3.2.1",
+        "mocha": "^3.5.0"
+    },
+    "scripts": {
+        "test": "BO_ROOT_SCRIPT_PATH=$(pwd)/node_modules/bash.origin/bash.origin bash.origin.test examples"
+    }
 }
