@@ -94,14 +94,30 @@ exports.forConfig = function (CONFIG) {
 
             } else {
 
-                var page = FS.readFileSync(PATH.join(__dirname, "www/index.html"), "utf8");
+                return BO.invokeApi(
+                    {
+                        "@it.pinf.org.browserify#s1": {
+                            "code": tests.join("\n"),
+                            "basedir": CONFIG.basedir || process.cwd()
+                        }
+                    },
+                    "#io.pinf/process~s1",
+                    [
+                        {},
+                        function (err, code) {
+                            if (err) return callback(err);
 
-                page = page.replace(/%%LIB_BASE_URL%%/g, "/.lib");
-                page = page.replace(/%%TESTS%%/g, tests.join("\n"));
-                page = page.replace(/%%STOP_URL%%/g, "http://127.0.0.1:" + CONFIG.variables.PORT + "/stop");
-                page = page.replace(/%%SUITE%%/g, CONFIG.suite || "");
+                            var page = FS.readFileSync(PATH.join(__dirname, "www/index.html"), "utf8");
 
-                return callback(null, page);
+                            page = page.replace(/%%LIB_BASE_URL%%/g, "/.lib");
+                            page = page.replace(/%%TESTS%%/g, code);
+                            page = page.replace(/%%STOP_URL%%/g, "http://127.0.0.1:" + CONFIG.variables.PORT + "/stop");
+                            page = page.replace(/%%SUITE%%/g, CONFIG.suite || "");
+            
+                            return callback(null, page);
+                        }
+                    ]
+                );
             }
 
         } catch (err) {
