@@ -25,7 +25,7 @@ CALL_server run {
                 "tests": {
                     "01-HelloWorld": function /* CodeBlock */ () {
 
-                        const PINF = require("pinf-loader-js");
+                        const PINF = require("pinf-loader-js/loader.browser.js").PINF;
 
                         describe('Load', function () {
                             it('Tests', function (done) {

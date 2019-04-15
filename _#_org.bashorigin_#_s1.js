@@ -1,5 +1,5 @@
 
-const LIB = require("bash.origin.workspace").forPackage(__dirname).LIB;
+const LIB = require("bash.origin.lib").forPackage(__dirname).js;
 
 
 const Promise = LIB.BLUEBIRD;
@@ -11,13 +11,13 @@ Promise.defer = function () {
     });
     return deferred;
 }
-const PATH = LIB.PATH;
+const PATH = LIB.path;
 const FS = LIB.FS_EXTRA;
 const MIME_TYPES = LIB.MIME_TYPES;
 const CODEBLOCK = LIB.CODEBLOCK;
 const LODASH = LIB.LODASH;
 const BO = LIB.BASH_ORIGIN;
-const CRYPTO = LIB.CRYPTO;
+const CRYPTO = LIB.crypto;
 
 
 var reports = {};

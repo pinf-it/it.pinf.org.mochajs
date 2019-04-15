@@ -1,0 +1,25 @@
+>>>TEST_IGNORE_LINE:^127\.<<<
+[0;31mTODO: Request page in browser and close browser.[0m
+[bash.origin.express] Adding route: /^\//
+Server: http://localhost:8080/
+[READY]
+[bash.origin.express] Routing request / with method GET due to route { /^\// fast_star: false, fast_slash: false }
+[bash.origin.express] Routing request /.lib/mocha/mocha.css with method GET due to route { /^\// fast_star: false, fast_slash: false }
+[bash.origin.express] Routing request /.lib/jquery/dist/jquery.js with method GET due to route { /^\// fast_star: false, fast_slash: false }
+[bash.origin.express] Routing request /.lib/chai/chai.js with method GET due to route { /^\// fast_star: false, fast_slash: false }
+[bash.origin.express] Routing request /.lib/mocha/mocha.js with method GET due to route { /^\// fast_star: false, fast_slash: false }
+[bash.origin.express] Routing request /stop with method POST due to route { /^\// fast_star: false, fast_slash: false }
+>>>TEST_IGNORE_LINE:"(start|end|duration)": (".*Z"|[\d]+),?s*$<<<
+<RESULT passed="true">
+{
+    "suite": "",
+    "stats": {
+        "suites": 3,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+    }
+}
+</RESULT>
+OK
