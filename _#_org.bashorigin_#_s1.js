@@ -73,7 +73,8 @@ exports.forConfig = function (CONFIG) {
                             "src": path,
                             "dist": CONFIG.dist,
                             "prime": true,
-                            "format": "pinf"
+                            "format": "pinf",
+                            babel: CONFIG.babel
                         }
                     },
                     "#io.pinf/process~s1",
@@ -98,7 +99,8 @@ exports.forConfig = function (CONFIG) {
                     {
                         "@it.pinf.org.browserify#s1": {
                             "code": tests.join("\n"),
-                            "basedir": CONFIG.basedir || process.cwd()
+                            "basedir": CONFIG.basedir || process.cwd(),
+                            babel: CONFIG.babel
                         }
                     },
                     "#io.pinf/process~s1",
