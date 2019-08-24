@@ -1,21 +1,19 @@
 {
-    "name": "it.pinf.org.mochajs",
-    "version": "0.0.2",
-    "pm": {
-        "publish": "npm"
-    },
-    "__dependencies": {
-        "bash.origin.lib": ""
-    },
-    "dependencies": {
-        "chai": "https://github.com/chaijs/chai/tarball/4.1.2",
-        "jquery": "^3.2.1",
-        "mocha": "^3.5.0"
-    },
-    "devDependencies": {
-        "pinf-loader-js": "^1.0.4"
-    },
-    "scripts": {
-        "test": "bash.origin.test examples"
-    }
+  "name": "it.pinf.org.mochajs",
+  "version": "0.1.0-pre.0",
+  "pm": {
+    "publish": "npm"
+  },
+  "dependencies": {
+    "chai": "https://github.com/chaijs/chai/tarball/4.1.2",
+    "jquery": "^3.2.1",
+    "mocha": "^3.5.0",
+    "bash.origin.lib": "^0.4.0-pre.0"
+  },
+  "devDependencies": {
+    "pinf-loader-js": "^1.0.4"
+  },
+  "scripts": {
+    "test": "bash.origin.test examples"
+  }
 }
