@@ -7,3 +7,4 @@ node_modules/
 ~.rt_*
 .~*
 /package-lock.json
+/examples/*/.dist/

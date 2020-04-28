@@ -1,0 +1,27 @@
+>>>TEST_IGNORE_LINE:^127\.<<<
+[bash.origin.express] Adding route: /tests.js
+[34m[1m[pinf.it][gi0.PINF.it/copy/v0:copy:/.dist][22m[39m [34m[1mRun tool step for:[22m[39m [34m[1m../../#!/gi0.PINF.it:/mocha/mocha.js[22m[39m
+[34m[1m[pinf.it][22m[39m [34m[1mWriting to: TeStLoCaLiZeD/.dist/lib/mocha/mocha.js[22m[39m
+[34m[1m[pinf.it][gi0.PINF.it/copy/v0:copy:/.dist][22m[39m [34m[1mRun tool step for:[22m[39m [34m[1m../../#!/gi0.PINF.it:/mocha/mocha.css[22m[39m
+[34m[1m[pinf.it][22m[39m [34m[1mWriting to: TeStLoCaLiZeD/.dist/lib/mocha/mocha.css[22m[39m
+[34m[1m[pinf.it][gi0.PINF.it/copy/v0:copy:/.dist][22m[39m [34m[1mRun tool step for:[22m[39m [34m[1m../../#!/gi0.PINF.it:/chai/chai.js[22m[39m
+[34m[1m[pinf.it][22m[39m [34m[1mWriting to: TeStLoCaLiZeD/.dist/lib/chai/chai.js[22m[39m
+[34m[1m[pinf.it][gi0.PINF.it/copy/v0:copy:/.dist][22m[39m [34m[1mRun tool step for:[22m[39m [34m[1m../../#!/gi0.PINF.it:/jquery/dist/jquery.js[22m[39m
+[34m[1m[pinf.it][22m[39m [34m[1mWriting to: TeStLoCaLiZeD/.dist/lib/jquery/dist/jquery.js[22m[39m
+[bash.origin.express] Adding route: /^\//
+Server: http://localhost:3000/
+[1m[35mLoading URL: http://localhost:3000/index.html[39m[22m
+>>>TEST_IGNORE_LINE:"(start|end|duration)": (".*Z"|[\d]+),?s*$<<<
+<RESULT passed="true">
+{
+    "suite": "",
+    "stats": {
+        "suites": 2,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+    }
+}
+</RESULT>
+OK

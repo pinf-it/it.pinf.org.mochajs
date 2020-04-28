@@ -2,14 +2,14 @@
 <head>
     <meta charset="utf-8">
     <title>Mocha Tests</title>
-    <link href="%%LIB_BASE_URL%%/mocha/mocha.css" rel="stylesheet" />
+    <link href="./lib/mocha/mocha.css" rel="stylesheet" />
 </head>
 <body>
     <div id="mocha"></div>
 
-    <script src="%%LIB_BASE_URL%%/jquery/dist/jquery.js"></script>
-    <script src="%%LIB_BASE_URL%%/chai/chai.js"></script>
-    <script src="%%LIB_BASE_URL%%/mocha/mocha.js"></script>
+    <script src="./lib/jquery/dist/jquery.js"></script>
+    <script src="./lib/chai/chai.js"></script>
+    <script src="./lib/mocha/mocha.js"></script>
 
     <script>
         mocha.setup('bdd');
@@ -57,6 +57,8 @@
                 });
             })
             .on('end', function () {
+
+// console.log("Calling STOP URL: ./stop");
                 $.ajax({
                     type: "POST",
                     url: "%%STOP_URL%%",

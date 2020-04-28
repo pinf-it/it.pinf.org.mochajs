@@ -1,0 +1,30 @@
+{
+    "router/v1 #": "${__DIRNAME__}/tool.",
+    "builder/v1 #": "${__DIRNAME__}/tool.",
+    "expect/v1 #": "${__DIRNAME__}/tool.",
+
+    "#": "gi0.PINF.it/core/v0",
+
+    "#": {
+        "/lib": "it.pinf.org.browserify"
+    },
+
+    ":copy:": "/lib @ copy/v0",
+
+    "builder/v1 # onHome()": (inf () >>>
+        {
+            "gi0.PINF.it/core/v0 @ # :copy: write() /mocha/mocha.js": {
+                "source": "mocha/mocha.js"
+            },
+            "gi0.PINF.it/core/v0 @ # :copy: write() /mocha/mocha.css": {
+                "source": "mocha/mocha.css"
+            },
+            "gi0.PINF.it/core/v0 @ # :copy: write() /chai/chai.js": {
+                "source": "chai/chai.js"
+            },
+            "gi0.PINF.it/core/v0 @ # :copy: write() /jquery/dist/jquery.js": {
+                "source": "jquery/dist/jquery.js"
+            }        
+        }
+    <<<)
+}
