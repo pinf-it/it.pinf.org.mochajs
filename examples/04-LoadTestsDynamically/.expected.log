@@ -16,9 +16,9 @@ Server: http://localhost:3000/
 {
     "suite": "",
     "stats": {
-        "suites": 2,
-        "tests": 1,
-        "passes": 1,
+        "suites": 4,
+        "tests": 3,
+        "passes": 3,
         "pending": 0,
         "failures": 0,
     }

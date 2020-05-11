@@ -34,7 +34,9 @@ CALL_runner run {
                     "@it.pinf.org.mochajs # router/v1": {
                         "exit": true,
                         "tests": {
-                            "01-HelloWorld": function /* CodeBlock */ () {
+                            "01-HelloWorld": function /* CodeBlock */ (build) {
+
+                                const buildPath = "%%%build.path%%%";
 
                                 const PINF = require("pinf-loader-js/loader.browser.js").PINF;
 
@@ -45,6 +47,9 @@ CALL_runner run {
                                             sandbox.main();
                                             done();
                                         }, done);
+                                    });
+                                    it(buildPath, function () {
+
                                     });
                                 });
                             }
